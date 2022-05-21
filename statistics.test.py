@@ -18,8 +18,7 @@ class StatsAlerter():
   def checkAndAlert(self,Alerts):
     if max(Alerts) > self.Max_Threshold:
       self.Alerts[0].emailSent = True
-      self.Alerts[1].ledGlows = True
-    
+      self.Alerts[1].ledGlows = True  
     
 class StatsTest(unittest.TestCase):
   def test_report_min_max_avg(self):
