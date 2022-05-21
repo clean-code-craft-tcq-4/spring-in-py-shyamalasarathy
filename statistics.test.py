@@ -2,7 +2,7 @@ import unittest
 import statistics
 import math
 
-class EmailAler():
+class EmailAlert():
   def __inti__(self):
     self.emailSent = False
     
@@ -33,7 +33,7 @@ class StatsTest(unittest.TestCase):
     computedStats = statistics.calculateStats([])
     self.assertTrue(math.isnan(computedStats["avg"]))
     self.assertTrue(math.isnan(computedStats["max"]))
-    self.assertTrue(math.isnan(computedStats["min"],))
+    self.assertTrue(math.isnan(computedStats["min"]))
     
     # All fields of computedStats (average, max, min) must be
     # nan (not-a-number), as defined in the math package
